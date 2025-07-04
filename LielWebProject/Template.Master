@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="LielWebProject.Template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Blackjack</title>
+    <link href="./CSS/Template.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <ul>
+        <li id="lblUserName" runat="server"></li>
+        <li><a href="~/ASP_Pages/Home.aspx" id="home" runat="server">Home</a></li>
+        <li><a href="~/ASP_Pages/Play.aspx" id="play" runat="server">Play</a></li>
+        <li><a href="~/ASP_Pages/Login.aspx" id="login" runat="server">Login</a></li>
+        <li><a href="~/ASP_Pages/Register.aspx" id="register" runat="server">Register</a></li>
+        <li><a href="~/ASP_Pages/Leaderboard.aspx" id="leaderboard" runat="server">Leaderboard</a></li>
+        <li><a href="~/ASP_Pages/Logout.aspx" id="logout" runat="server">Log Out</a></li>
+    </ul>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+</body>
+</html>
