@@ -76,6 +76,7 @@
     <Content Include="ASP_Pages\Login.aspx" />
     <Content Include="ASP_Pages\Logout.aspx" />
     <Content Include="ASP_Pages\Play.aspx" />
+    <Content Include="ASP_Pages\Profile.aspx" />
     <Content Include="ASP_Pages\Register.aspx" />
     <Content Include="CSS\Template.css" />
     <Content Include="Images\Blackjack.png" />
@@ -173,6 +174,13 @@
     </Compile>
     <Compile Include="ASP_Pages\Play.aspx.designer.cs">
       <DependentUpon>Play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASP_Pages\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASP_Pages\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="ASP_Pages\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

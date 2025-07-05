@@ -119,6 +119,9 @@ namespace LielWebProject.ASP_Pages
 
             RefreshGameUI();
 
+            Player.AceCheck();
+            Dealer.AceCheck();
+
             if (Player.HandValue() == 21)
             {
                 IsPlayerTurn = false;
@@ -132,6 +135,9 @@ namespace LielWebProject.ASP_Pages
         {
             Player.Deal(Deck);
             Session["Player"] = Player;
+
+            Player.AceCheck();
+            Dealer.AceCheck();
 
             if (Player.HandValue() >= 21)
             {
@@ -173,6 +179,7 @@ namespace LielWebProject.ASP_Pages
             while (Dealer.HandValue() < 17)
             {
                 Dealer.Deal(Deck);
+                Dealer.AceCheck();
             }
 
             string result;
@@ -206,6 +213,13 @@ namespace LielWebProject.ASP_Pages
 
         protected void btnPlayAgain_Click(object sender, EventArgs e)
         {
+            if (Player.Chips <= Player.Bet)
+            {
+                lblResult.Text = "You have no chips left. Please place a new bet.";
+                pnlBet.Visible = true;
+                pnlGame.Visible = false;
+                return;
+            }
             StartGame();
             pnlPlayAgain.Visible = false;
         }

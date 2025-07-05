@@ -10,17 +10,20 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="~/ASP_Pages/Profile.aspx" id="username" runat="server"></a></li>
+            <li><a href="~/ASP_Pages/Home.aspx" id="home" runat="server">Home</a></li>
+            <li><a href="~/ASP_Pages/Play.aspx" id="play" runat="server">Play</a></li>
+            <li><a href="~/ASP_Pages/Login.aspx" id="login" runat="server">Login</a></li>
+            <li><a href="~/ASP_Pages/Register.aspx" id="register" runat="server">Register</a></li>
+            <li><a href="~/ASP_Pages/Leaderboard.aspx" id="leaderboard" runat="server">Leaderboard</a></li>
+            <li><a href="~/ASP_Pages/Logout.aspx" id="logout" runat="server">Log Out</a></li>
+        </ul>
+    </nav>
 
-    <ul>
-        <li id="lblUserName" runat="server"></li>
-        <li><a href="~/ASP_Pages/Home.aspx" id="home" runat="server">Home</a></li>
-        <li><a href="~/ASP_Pages/Play.aspx" id="play" runat="server">Play</a></li>
-        <li><a href="~/ASP_Pages/Login.aspx" id="login" runat="server">Login</a></li>
-        <li><a href="~/ASP_Pages/Register.aspx" id="register" runat="server">Register</a></li>
-        <li><a href="~/ASP_Pages/Leaderboard.aspx" id="leaderboard" runat="server">Leaderboard</a></li>
-        <li><a href="~/ASP_Pages/Logout.aspx" id="logout" runat="server">Log Out</a></li>
-    </ul>
-
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    <center>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </center>
 </body>
 </html>

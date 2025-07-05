@@ -1,72 +1,74 @@
 ﻿body {
     background-color: #006400;
-    align-items: center;
-    text-align: center;
     color: white;
-}
-
-ul {
-    list-style-type: none;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    justify-content: left;
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #004d00;
 }
 
-a {
-    text-decoration: none;
+/* TOPBAR */
+nav {
+    background-color: #004d00;
+    width: 100%;
+    position: relative;
+}
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav li {
+        padding: 0 15px;
+        line-height: 50px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 10px; /* always applied */
+        border-radius: 5px;
+    }
+
+        nav a:hover {
+            background-color: #005700;
+        }
+
+/* MAIN CONTENT */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* TABLE DESIGN */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #004d00;
     color: white;
+}
+
+th, td {
+    border: 1px solid #ffffff;
     padding: 10px;
-    border-radius: 5px;
+    text-align: left;
 }
 
-li {
-    margin: 5px;
-}
-
-a:hover {
+th {
     background-color: #005700;
 }
 
-h1 {
-    font-size: 36px;
-    margin: 20px 0;
-    font-family: 'Arial', sans-serif;
-}
-
-h2 {
-    font-size: 28px;
-    margin: 15px 0;
-    font-family: 'Arial', sans-serif;
-}
-
-p {
-    font-size: 18px;
-    margin: 10px 0;
-    font-family: 'Arial', sans-serif;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-button {
+td {
     background-color: #004d00;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #005700;
 }
 
 footer {
@@ -76,4 +78,8 @@ footer {
     color: white;
     font-size: 16px;
     text-align: center;
+}
+
+.container {
+    justify-content: inherit;
 }

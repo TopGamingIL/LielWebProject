@@ -13,8 +13,8 @@ namespace LielWebProject
         {
             if (Session["UserName"] != null)
             {
-                lblUserName.InnerText = "Hello, " + Session["UserName"].ToString() + "!";
-                lblUserName.Style["display"] = "block";
+                username.InnerText = "Hello, " + Session["UserName"].ToString() + "!";
+                username.Style["display"] = "block";
                 home.Style["display"] = "block";
                 play.Style["display"] = "block";
                 login.Style["display"] = "none";
@@ -24,8 +24,8 @@ namespace LielWebProject
             }
             else
             {
-                lblUserName.InnerText = "Hello, Guest!";
-                lblUserName.Style["display"] = "block";
+                username.InnerText = "Hello, Guest!";
+                username.Style["display"] = "block";
                 home.Style["display"] = "block";
                 play.Style["display"] = "none";
                 login.Style["display"] = "block";
